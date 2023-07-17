@@ -1,0 +1,43 @@
+*. django-admin startproject mysite
+	it will create manage.py nd some other file
+
+
+*. needs to create views.py
+
+*. from django.http import HttpResponse - for response
+
+*. from django.shortcuts import render - to use template(html)
+
+*. def login(request):
+    params={'name':'abc','age':'23'}
+    return render(request,'index.html',params)
+   
+    in html we can get this data by using key name
+
+*. request.GET.get('tag_name','default')	
+	 to get data from request
+
+
+
+*. in html we are defining path in form tag
+
+*. django manage.py startapp appname
+
+	it will create the app with all mehtods in it
+
+*. {% load static %}
+    <a herf="{%static 'blog/myblog.txt%}">click me</a>
+	create static file in that one file in tht file create a file it is used to read a file
+
+
+*. edn
+
+*. python manage.py migrate
+
+*. python manage.py makemigrations
+
+*. to create a table
+	define table in model
+	register model in admin
+	run makemigrations
+	run migrate
