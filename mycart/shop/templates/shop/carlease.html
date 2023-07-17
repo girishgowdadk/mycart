@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design Example</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS Styles */
+
+body {
+  padding-top: 50px;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+/* Center the h1 heading */
+h1 {
+  text-align: center;
+}
+
+/* Add some spacing between the sections */
+.row {
+  margin-bottom: 30px;
+}
+
+/* Apply a background color to the "About Us" section */
+.col-md-6:first-child {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+/* Style the contact form inputs and textarea */
+.form-control {
+  margin-bottom: 10px;
+}
+
+/* Add some space below the submit button */
+.btn-primary {
+  margin-bottom: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Responsive Design Example</h1>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae est sit amet risus gravida consectetur non id velit.</p>
+      </div>
+
+      <div class="col-md-6">
+        <h2>Contact Us</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
